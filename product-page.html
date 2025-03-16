@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Header</title>
+    <title>SkinMedical - Product Page</title>
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -311,33 +312,6 @@
                 </p>
                 <a class="review-link" href="#">Читати далі</a>
               </div>
-
-              <div class="swiper-slide review-card">
-                <div class="review-head">
-                  <div class="review-head-image">
-                    <img src="img/review-image.png" alt="Вячеслав Михайлов" />
-                  </div>
-                  <div class="review-head-info">
-                    <h3>Вячеслав Михайлов</h3>
-                    <span class="date">25/03/2024</span>
-                  </div>
-                  <div class="review-head-logo">
-                    <img src="img/google.png" alt="Resource logo" />
-                  </div>
-                </div>
-                <div class="stars">
-                  <img src="img/star.png" alt="star icon" />
-                  <img src="img/star.png" alt="star icon" />
-                  <img src="img/star.png" alt="star icon" />
-                  <img src="img/star.png" alt="star icon" />
-                  <img src="img/star.png" alt="star icon" />
-                </div>
-                <p class="review-message">
-                  Залишився задоволеним. Лікар Роксолана знає свою справу. Процедура IPL дала
-                  результат вже с першого разу, але цього поки, що
-                </p>
-                <a class="review-link" href="#">Читати далі</a>
-              </div>
             </div>
           </div>
           <!-- Кнопки навигации -->
@@ -502,9 +476,14 @@
           },
           grabCursor: true, // Удобное перетаскивание на мобильных
           breakpoints: {
+            1400: {
+              slidesPerView: 2,
+            },
             1100: {
-              slidesPerView: 1, // После 1100px показываем 1 слайд
-              slidesPerGroup: 2, // Прокрутка по 1 слайду
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
             },
           },
         });
