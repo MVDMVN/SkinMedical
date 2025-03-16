@@ -1,0 +1,116 @@
+$primary-bg: #e5e7eb; // Фон футера
+$text-color: #333;
+$menu-hover: #666;
+$container-width: 1400px;
+
+.footer {
+  width: 100%;
+  background: $primary-bg;
+  padding: 50px 24px;
+
+  .container {
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 240px;
+
+    img {
+      height: 60px;
+    }
+
+    span {
+      font-size: 18px;
+      font-weight: bold;
+      color: $text-color;
+    }
+  }
+
+  .footer-menu {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 80px;
+      padding: 0;
+      margin: 0;
+      transition: 0.3s;
+
+      li {
+        a {
+          text-decoration: none;
+          color: $text-color;
+          font-size: 16px;
+          font-weight: bold;
+          transition: 0.3s;
+
+          &:hover {
+            color: $menu-hover;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-social {
+    display: flex;
+    gap: 15px;
+
+    a img {
+      width: 24px;
+      height: 24px;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: $text-color;
+  }
+
+  @media screen and (max-width: 1366px) {
+    .footer-menu {
+      ul {
+        gap: 50px;
+      }
+    }
+  }
+
+  // Адаптивность
+  @media (max-width: 1024px) {
+    .container {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .footer-menu ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer-social {
+      margin-top: 10px;
+    }
+  }
+}

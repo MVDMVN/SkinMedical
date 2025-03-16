@@ -1,0 +1,144 @@
+$sidebar-bg: #f4f4f4; // Цвет фона боковой панели
+$text-color: #333;
+$border-color: #ddd;
+$checkbox-border: #bdbdbd;
+$checkbox-size: 18px;
+$sidebar-width: 250px;
+
+.sidebar {
+  width: $sidebar-width;
+  background: $sidebar-bg;
+  padding: 60px 0 0 40px;
+  // border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  max-width: 365px;
+  width: 100%;
+  // margin-right: 50px;
+  position: relative;
+  transition: 0.3s;
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .filter-section {
+    margin-bottom: 20px;
+    max-width: 211px;
+    width: 100%;
+
+    h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: $text-color;
+    }
+
+    .filter-options {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        color: $text-color;
+        cursor: pointer;
+        width: 100%;
+
+        input {
+          order: 2;
+          width: $checkbox-size;
+          height: $checkbox-size;
+          appearance: none; // Убираем стандартный чекбокс
+          background: none; // Убираем фон
+          border: 2px solid $checkbox-border; // Граница чекбокса
+          border-radius: 4px; // Скругление углов (можно убрать)
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: 0.3s;
+
+          &:checked {
+            background: none;
+            border-color: $checkbox-border;
+            position: relative;
+
+            &::after {
+              content: "";
+              width: 7px;
+              height: 11px;
+              border: solid #555;
+              border-width: 0 2px 2px 0;
+              transform: rotate(45deg);
+              position: absolute;
+              top: 0px;
+              left: 3px;
+            }
+          }
+        }
+      }
+    }
+
+    hr {
+      margin-top: 10px;
+      border: none;
+      height: 1px;
+      background: $border-color;
+    }
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .sidebar {
+    max-width: 322px;
+    padding: 60px 24px 0 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 215px;
+    height: 100vh;
+    padding: 20px;
+    opacity: 0;
+    transform: translateX(-100%); // По умолчанию скрыта
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+
+    .close-btn {
+      display: block;
+    }
+
+    &.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .filter-section {
+    margin-bottom: 15px;
+
+    h3 {
+      font-size: 16px;
+    }
+
+    .filter-options label {
+      font-size: 14px;
+    }
+  }
+}

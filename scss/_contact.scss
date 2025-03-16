@@ -1,0 +1,111 @@
+$light-bg: #c5ccd6; // Светлый фон (левый блок)
+$dark-bg: #848a97; // Тёмный фон (правый блок)
+$text-color: #333;
+$button-bg: #2e2e5e;
+$button-hover: #252550;
+$input-bg: #ffffff;
+$input-border: #ddd;
+$section-height: 410px;
+
+.contact-section {
+  width: 100%;
+  height: $section-height;
+  display: flex;
+
+  .left {
+    width: 50%;
+    background: $light-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: $text-color;
+    }
+
+    p {
+      font-size: 18px;
+      color: $text-color;
+    }
+  }
+
+  .right {
+    width: 50%;
+    background: $dark-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 320px;
+
+      input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid $input-border;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      button {
+        background: $button-bg;
+        color: #fff;
+        font-size: 18px;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+          background: $button-hover;
+        }
+      }
+    }
+  }
+}
+
+// Адаптивность
+@media (max-width: 1024px) {
+  .contact-section {
+    flex-direction: column;
+    height: auto;
+
+    .left,
+    .right {
+      width: 100%;
+      height: 50%;
+    }
+
+    .left {
+      padding: 40px;
+    }
+
+    .right {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .left h2 {
+    font-size: 28px;
+  }
+
+  .left p {
+    font-size: 16px;
+  }
+
+  .right form {
+    width: 100%;
+    max-width: 280px;
+  }
+}

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/64a15cdba1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!-- <button class="menu-btn">&#9776;</button> -->
+      <button class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="container">
+        <!-- Гамбургер -->
+        <div class="logo"><img src="img/logo.png" alt="Logo image" /></div>
+        <!-- Логотип -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#">Послуги</a></li>
+            <li><a href="#">Ціни</a></li>
+            <li><a href="#">Акції</a></li>
+            <li><a href="#">Наші лікарі</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="right-section">
+          <div class="language">
+            <img src="img/ua-flag.png" alt="Language" />
+          </div>
+          <div class="contacts">
+            <a href="tel:+380970290937" class="phone">+38 097 029 09 37</a>
+            <a href="tel:+380950582612" class="phone">+38 095 058 26 12</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="page-title">
+      <p class="page-title__text">Our shop</p>
+    </section>
+
+    <div class="content-container">
+      <section class="sidebar">
+        <button class="close-btn">×</button>
+        <!-- Фильтр "Бренд" -->
+        <div class="filter-section">
+          <h3>Brand</h3>
+          <div class="filter-options">
+            <label><input type="checkbox" /> AHA Glycolic Acid</label>
+            <label><input type="checkbox" /> Bakuchiol</label>
+            <label><input type="checkbox" /> Aloe Vera</label>
+          </div>
+          <hr />
+        </div>
+
+        <!-- Фильтр "Тип продукта" -->
+        <div class="filter-section">
+          <h3>Product Type</h3>
+          <div class="filter-options">
+            <label><input type="checkbox" /> AHA Glycolic Acid</label>
+            <label><input type="checkbox" /> Bakuchiol</label>
+            <label><input type="checkbox" /> Aloe Vera</label>
+          </div>
+          <hr />
+        </div>
+
+        <!-- Фильтр "Ключевой ингредиент" -->
+        <div class="filter-section">
+          <h3>Key Ingredient</h3>
+          <div class="filter-options">
+            <label><input type="checkbox" /> AHA Glycolic Acid</label>
+            <label><input type="checkbox" /> Bakuchiol</label>
+            <label><input type="checkbox" /> Aloe Vera</label>
+          </div>
+          <hr />
+        </div>
+      </section>
+
+      <section class="main-container">
+        <section class="products">
+          <div class="products-head">
+            <div class="product-left">
+              <p class="products-head-filter">Filter <i class="fa-solid fa-filter"></i></p>
+              <p class="products-head-count">4126 products</p>
+            </div>
+
+            <div class="sort-container">
+              <label for="sort">Sort by</label>
+              <div class="custom-select">
+                <select id="sort">
+                  <option value="all">All</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="newest">Newest</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="product-card">
+              <img src="img/products-1.png" alt="Medik8 Face Cream" />
+              <h3>Face cream Retinol</h3>
+              <p class="price">2 450 $</p>
+            </div>
+
+            <div class="product-card">
+              <img src="img/products-2.png" alt="Elemis Face Cream" />
+              <h3>Face cream Retinol</h3>
+              <p class="price">2 450 $</p>
+            </div>
+
+            <div class="product-card">
+              <img src="img/products-3.png" alt="Sue Face Cream" />
+              <h3>Face cream Retinol</h3>
+              <p class="price">2 450 $</p>
+            </div>
+
+            <div class="product-card">
+              <img src="img/products-1.png" alt="Medik8 Face Cream" />
+              <h3>Face cream Retinol</h3>
+              <p class="price">2 450 $</p>
+            </div>
+
+            <div class="product-card">
+              <img src="img/products-2.png" alt="Elemis Face Cream" />
+              <h3>Face cream Retinol</h3>
+              <p class="price">2 450 $</p>
+            </div>
+
+            <div class="product-card">
+              <img src="img/products-3.png" alt="Sue Face Cream" />
+              <h3>Face cream Retinol</h3>
+              <p class="price">2 450 $</p>
+            </div>
+
+            <div class="product-card">
+              <img src="img/products-1.png" alt="Medik8 Face Cream" />
+              <h3>Face cream Retinol</h3>
+              <p class="price">2 450 $</p>
+            </div>
+
+            <div class="product-card">
+              <img src="img/products-2.png" alt="Elemis Face Cream" />
+              <h3>Face cream Retinol</h3>
+              <p class="price">2 450 $</p>
+            </div>
+
+            <div class="product-card">
+              <img src="img/products-3.png" alt="Sue Face Cream" />
+              <h3>Face cream Retinol</h3>
+              <p class="price">2 450 $</p>
+            </div>
+          </div>
+          <button class="show-more">Show more</button>
+        </section>
+
+        <div class="reviews-container">
+          <!-- Левый статичный блок -->
+          <div class="static-review">
+            <div class="static-image">
+              <img src="img/logo.png" alt="Skin Medical" />
+            </div>
+            <div class="static-content">
+              <h3>Skin Medical - Центр Естетичної Медицини</h3>
+              <div class="stars">★★★★★</div>
+              <p>210 Відгуки про Google</p>
+              <button class="review-btn">написати рецензію</button>
+            </div>
+          </div>
+
+          <!-- Swiper слайдер -->
+          <div class="swiper-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide review-card">
+                  <div class="review-head">
+                    <div class="review-head-image">
+                      <img src="img/review-image.png" alt="Вячеслав Михайлов" />
+                    </div>
+                    <div class="review-head-info">
+                      <h3>Вячеслав Михайлов</h3>
+                      <span class="date">25/03/2024</span>
+                    </div>
+                    <div class="review-head-logo">
+                      <img src="img/google.png" alt="Resource logo" />
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                  </div>
+                  <p class="review-message">
+                    Залишився задоволеним. Лікар Роксолана знає свою справу. Процедура IPL дала
+                    результат вже с першого разу, але цього поки, що
+                  </p>
+                  <a class="review-link" href="#">Читати далі</a>
+                </div>
+
+                <div class="swiper-slide review-card">
+                  <div class="review-head">
+                    <div class="review-head-image">
+                      <img src="img/review-image.png" alt="Вячеслав Михайлов" />
+                    </div>
+                    <div class="review-head-info">
+                      <h3>Вячеслав Михайлов</h3>
+                      <span class="date">25/03/2024</span>
+                    </div>
+                    <div class="review-head-logo">
+                      <img src="img/google.png" alt="Resource logo" />
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                  </div>
+                  <p class="review-message">
+                    Залишився задоволеним. Лікар Роксолана знає свою справу. Процедура IPL дала
+                    результат вже с першого разу, але цього поки, що
+                  </p>
+                  <a class="review-link" href="#">Читати далі</a>
+                </div>
+
+                <div class="swiper-slide review-card">
+                  <div class="review-head">
+                    <div class="review-head-image">
+                      <img src="img/review-image.png" alt="Вячеслав Михайлов" />
+                    </div>
+                    <div class="review-head-info">
+                      <h3>Вячеслав Михайлов</h3>
+                      <span class="date">25/03/2024</span>
+                    </div>
+                    <div class="review-head-logo">
+                      <img src="img/google.png" alt="Resource logo" />
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                  </div>
+                  <p class="review-message">
+                    Залишився задоволеним. Лікар Роксолана знає свою справу. Процедура IPL дала
+                    результат вже с першого разу, але цього поки, що
+                  </p>
+                  <a class="review-link" href="#">Читати далі</a>
+                </div>
+
+                <div class="swiper-slide review-card">
+                  <div class="review-head">
+                    <div class="review-head-image">
+                      <img src="img/review-image.png" alt="Вячеслав Михайлов" />
+                    </div>
+                    <div class="review-head-info">
+                      <h3>Вячеслав Михайлов</h3>
+                      <span class="date">25/03/2024</span>
+                    </div>
+                    <div class="review-head-logo">
+                      <img src="img/google.png" alt="Resource logo" />
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                  </div>
+                  <p class="review-message">
+                    Залишився задоволеним. Лікар Роксолана знає свою справу. Процедура IPL дала
+                    результат вже с першого разу, але цього поки, що
+                  </p>
+                  <a class="review-link" href="#">Читати далі</a>
+                </div>
+
+                <div class="swiper-slide review-card">
+                  <div class="review-head">
+                    <div class="review-head-image">
+                      <img src="img/review-image.png" alt="Вячеслав Михайлов" />
+                    </div>
+                    <div class="review-head-info">
+                      <h3>Вячеслав Михайлов</h3>
+                      <span class="date">25/03/2024</span>
+                    </div>
+                    <div class="review-head-logo">
+                      <img src="img/google.png" alt="Resource logo" />
+                    </div>
+                  </div>
+                  <div class="stars">
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                    <img src="/img/star.png" alt="star icon" />
+                  </div>
+                  <p class="review-message">
+                    Залишився задоволеним. Лікар Роксолана знає свою справу. Процедура IPL дала
+                    результат вже с першого разу, але цього поки, що
+                  </p>
+                  <a class="review-link" href="#">Читати далі</a>
+                </div>
+              </div>
+            </div>
+            <!-- Кнопки навигации -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="contact-section">
+      <div class="left">
+        <h2>Залишились питання?</h2>
+        <p>Заповніть Ваші дані і ми зателефонуємо Вам в зручний для Вас час</p>
+      </div>
+      <div class="right">
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Ім'я" required />
+          <input type="tel" name="phone" placeholder="Телефон" required />
+          <button type="submit">Записатись</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <img src="img/footer-logo.png" alt="Skin Medical" />
+          <span>Центр естетичної медицини</span>
+        </div>
+
+        <nav class="footer-menu">
+          <ul>
+            <li><a href="#">Акції</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Послуги</a></li>
+            <li><a href="#">Ціни</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-social">
+          <a href="#"><img src="/img/inst.png" alt="Instagram" /></a>
+          <a href="#"><img src="/img/facebook.png" alt="Facebook" /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© Copyright 2025. Усі права захищені.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper", {
+          slidesPerView: 2, // По умолчанию 2 слайда
+          slidesPerGroup: 1, // Прокрутка по 1 слайду
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          grabCursor: true, // Удобное перетаскивание на мобильных
+          breakpoints: {
+            1100: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+          },
+        });
+      });
+
+      const menuBtn = document.querySelector(".menu-btn");
+      const nav = document.querySelector(".nav");
+
+      menuBtn.addEventListener("click", function () {
+        menuBtn.classList.toggle("active");
+        nav.classList.toggle("active");
+      });
+
+      document.querySelector(".products-head-filter").addEventListener("click", function () {
+        document.querySelector(".sidebar").classList.add("active");
+      });
+
+      document.querySelector(".close-btn").addEventListener("click", function () {
+        document.querySelector(".sidebar").classList.remove("active");
+      });
+    </script>
+  </body>
+</html>

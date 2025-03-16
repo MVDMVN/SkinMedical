@@ -1,0 +1,269 @@
+.product-container {
+  display: flex;
+  max-width: 1248px;
+  margin: auto;
+  gap: 40px;
+  padding: 60px 24px;
+}
+
+.product-breadcrumbs {
+  .product-breadcrumbs-content {
+    color: #4b4b4b;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+// Основной слайдер
+.main-slider {
+  width: 100%;
+  height: 500px;
+
+  .swiper-slide {
+    padding: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}
+
+// Миниатюры
+.thumbs-slider {
+  width: 100%;
+  height: 160px;
+
+  .swiper-slide {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+    padding: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+  }
+
+  .swiper-slide-thumb-active {
+    opacity: 1; // Выделенная миниатюра
+  }
+}
+
+// Детали товара
+.product-details {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+
+  .product-details-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .product-title {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
+  }
+
+  .product-price {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
+    color: #255a7a;
+  }
+}
+
+.product-details-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  gap: 10px;
+
+  // Выбор количества
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #cecece;
+    border-radius: 32px;
+
+    .quantity-btn {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      background: transparent;
+      cursor: pointer;
+      transition: 0.2s;
+      border: none;
+    }
+
+    .quantity-input {
+      width: 40px;
+      text-align: center;
+      font-size: 18px;
+      border: none;
+    }
+  }
+
+  // Кнопки
+  .product-buttons {
+    display: flex;
+    gap: 10px;
+
+    button {
+      flex: 1;
+      padding: 10px 15px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 280px;
+      border-radius: 30px;
+    }
+
+    .add-to-cart {
+      background: #255a7a;
+      color: white;
+      border: none;
+
+      &:hover {
+        background: darken(#255a7a, 5%);
+      }
+    }
+
+    .buy-now {
+      background: white;
+      color: #255a7a;
+      border: 1px solid #255a7a;
+
+      &:hover {
+        background: darken(#255a7a, 5%);
+        color: white;
+      }
+    }
+  }
+}
+
+// Аккордеоны
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-top: 1px solid #ccc;
+  padding-top: 24px;
+
+  .accordion-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 24px;
+
+    .accordion-header {
+      background: none;
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .accordion-content {
+      display: none;
+      padding-top: 10px;
+      font-size: 14px;
+
+      p {
+        padding-left: 6px;
+      }
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .product-details-actions {
+    flex-direction: column;
+
+    .quantity-selector {
+      width: 110px;
+      margin-bottom: 16px;
+    }
+
+    .product-buttons {
+      button {
+        max-width: 280px;
+        width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product-container {
+    padding: 40px 16px;
+    gap: 24px;
+  }
+
+  .product-gallery {
+    max-width: 400px;
+  }
+
+  .main-slider {
+    height: 300px;
+  }
+
+  .thumbs-slider {
+    height: 90px;
+  }
+
+  .product-details {
+    .product-title {
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+    .product-price {
+      font-size: 30px;
+      line-height: 36px;
+      text-wrap: nowrap;
+    }
+  }
+}
+
+// Адаптивность
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-gallery,
+  .product-details {
+    width: 100%;
+  }
+
+  .product-actions {
+    flex-direction: column;
+  }
+}
